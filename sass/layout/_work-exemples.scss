@@ -77,6 +77,9 @@
     transition-delay: 0ms;
     background-color: rgba(33, 150, 243, 0.9);
 
+    .examples-list__item:hover & {
+            transform: translateY(0);
+        }
 }
 
 .examples-list__overlay-text {
@@ -86,6 +89,3 @@
     color: var(--primary-white-color);
 }
 
-.examples-list__item:hover .examples-list__overlay {
-    transform: translateY(0);
-}

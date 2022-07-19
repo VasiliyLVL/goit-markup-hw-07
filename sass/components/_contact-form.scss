@@ -37,10 +37,10 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: var(--primary-animation-function);
-}
 
-.contact-form__input:focus+.contact-form__icon {
-    fill: var(--acent-color);
+    .contact-form__input:focus + & {
+        fill: var(--acent-color);
+    }
 }
 
 .contact-form__text {
@@ -100,16 +100,14 @@
         transition-property: border;
         transition-duration: 250ms;
         transition-timing-function: var(--primary-animation-function);
+
+        .contact-form__checbox:focus + & {
+                border: 1px solid var(--acent-color);
+            }
+        .contact-form__checbox:checked + & {
+            background-image: url(../images/iconcheck.svg);
+            background-color: var(--acent-color);
+            border: none;
+        }
     }
 }
-
-.contact-form__checbox:focus+.contact-form__checkbox-label::before {
-    border: 1px solid var(--acent-color);
-}
-
-.contact-form__checbox:checked+.contact-form__checkbox-label::before {
-    background-image: url(../images/iconcheck.svg);
-    background-color: var(--acent-color);
-    border: none;
-}
-

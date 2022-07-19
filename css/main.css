@@ -551,17 +551,16 @@ img {
           transition-delay: 0ms;
   background-color: rgba(33, 150, 243, 0.9);
 }
+.examples-list__item:hover .examples-list__overlay {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
 
 .examples-list__overlay-text {
   width: 322px;
   font-size: 18px;
   line-height: 1.55;
   color: var(--primary-white-color);
-}
-
-.examples-list__item:hover .examples-list__overlay {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .logo {
@@ -759,13 +758,11 @@ img {
   -webkit-transition-timing-function: var(--primary-animation-function);
           transition-timing-function: var(--primary-animation-function);
 }
-
-.is-hidden {
+.backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
-
 .backdrop.is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(0.5);
           transform: translate(-50%, -50%) scale(0.5);
@@ -878,7 +875,6 @@ img {
   -webkit-transition-timing-function: var(--primary-animation-function);
           transition-timing-function: var(--primary-animation-function);
 }
-
 .contact-form__input:focus + .contact-form__icon {
   fill: var(--acent-color);
 }
@@ -963,11 +959,9 @@ img {
   -webkit-transition-timing-function: var(--primary-animation-function);
           transition-timing-function: var(--primary-animation-function);
 }
-
 .contact-form__checbox:focus + .contact-form__checkbox-label::before {
   border: 1px solid var(--acent-color);
 }
-
 .contact-form__checbox:checked + .contact-form__checkbox-label::before {
   background-image: url(../images/iconcheck.svg);
   background-color: var(--acent-color);
